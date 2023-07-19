@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "ticketmaster_django/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "ticketmaster_django/wsgi.py"
+      }
+    ]
+}
