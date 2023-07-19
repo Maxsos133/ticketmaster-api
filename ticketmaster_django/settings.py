@@ -35,6 +35,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "ticketmaster-api.vercel.app",
+    "127.0.0.1"
 ]
 
 
