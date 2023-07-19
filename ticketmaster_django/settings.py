@@ -33,7 +33,9 @@ SECRET_KEY = "django-insecure-y$$-_7+=#f0^m*yhjc79%k&7kvf_ocd5gi#r=jyun*!2a=yxyc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "ticketmaster-api.vercel.app",
+]
 
 
 # Application definition
