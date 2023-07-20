@@ -16,6 +16,9 @@ class Venue(models.Model):
 class Event(models.Model):
     venue = models.ForeignKey(Venue, on_delete=models.CASCADE, related_name='events')
     name = models.CharField(max_length=100)
+    venue_name = models.CharField(max_length=100, null=True)
+    event_description = models.TextField(max_length=100, null=True)
+    img_url = models.CharField(max_length=200, null=True)
     date = models.CharField(max_length=100)
     time = models.CharField(max_length=200)
     performers = models.CharField(max_length=200)
