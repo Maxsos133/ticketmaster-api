@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
+from rest_framework.permissions import AllowAny
 from .serializers import VenueSerializer, EventSerializer
 from .models import Venue, Event
 
@@ -18,3 +19,4 @@ class EventList(generics.ListCreateAPIView):
 class EventDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
+    permission_classes = [AllowAny]
