@@ -169,5 +169,6 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:5555",
     "http://127.0.0.1:8000",
     "https://ticketmaster-api.vercel.app",
-    "https://event-pulse.netlify.app"
+    "https://event-pulse.netlify.app",
+    "https://event-pulse.vercel.app"
 ]
